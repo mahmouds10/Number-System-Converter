@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="min-vh-100">
+    <div class="header text-center py-4">
+      <h1>Number system converter</h1>
+    </div>
+    <div class="container h-500 justify-content-center d-flex flex-column">
+      <div class="align-self-center w-75 ccc">
+        <div class="content d-flex flex-column gap-4">
+          <div class="user-input w-100">
+            <div class="input-group mb-3">
+              <span class="span-width input-group-text" id="basic-addon1"
+                ><select class="form-select" name="" id="inputSelect">
+                  <option selected disabled value="">Choose base system</option>
+                  <option value="binary">Binary</option>
+                  <option value="octal">Octal</option>
+                  <option value="decimal">Decimal</option>
+                  <option value="hexa">Hexa</option>
+                </select></span
+              >
+              <input
+                id="userInput"
+                type="text"
+                class="form-control"
+                placeholder="Enter a number to convert"
+                aria-label="Username"
+              />
+            </div>
+          </div>
+
+          <div class="user-output w-100">
+            <div class="input-group mb-3">
+              <span class="span-width input-group-text" id="basic-addon1"
+                ><select class="form-select" name="" id="outputSelect">
+                  <option selected disabled value="">
+                    Choose target system
+                  </option>
+                  <option value="binary">Binary</option>
+                  <option value="octal">Octal</option>
+                  <option value="decimal">Decimal</option>
+                  <option value="hexa">Hexa</option>
+                </select></span
+              >
+              <input
+                id="output"
+                type="text"
+                class="form-control"
+                placeholder="Result"
+                readonly
+              />
+            </div>
+          </div>
+
+          <div class="buttons d-flex justify-content-center w-100 gap-4">
+            <button id="convert" class="btn btn-outline-primary">
+              Convert
+            </button>
+            <button id="clear" class="btn btn-outline-danger hover">
+              Clear
+            </button>
+          </div>
+
+          <div
+            id="errorFrame"
+            class="position-absolute top-50 start-50 translate-middle errors"
+          >
+            <div id="undefinedBase">
+              <i class="closeBtn fa-regular fa-circle-xmark"></i>
+              <h3>Plesae select a base system to convert from</h3>
+            </div>
+            <div id="undefinedTarget">
+              <i class="closeBtn fa-regular fa-circle-xmark"></i>
+              <h3>Plesae select a target system to convert to</h3>
+            </div>
+            <div id="sameOption">
+              <i class="closeBtn fa-regular fa-circle-xmark"></i>
+              <h3>Plesae select diffrent bases to convert between</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

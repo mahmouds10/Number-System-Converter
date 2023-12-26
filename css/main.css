@@ -1,0 +1,72 @@
+/* Fixed Style */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+a,
+span {
+  display: inline-block;
+}
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+::selection{
+  }
+/* =========================== */
+h1{
+  color: aliceblue;
+}
+body {
+  background-image:linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)) ,url(../imgs/number-system-tech.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.h-500{
+  height: 500px;
+}
+
+.errors{
+  background-color: rgba(245, 245, 220, 0.91);
+  width: 45%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 44px -19px rgba(0,0,0,0.75);
+
+}
+#errorFrame , #undefinedBase , #undefinedTarget ,#sameOption{
+  display: none;
+  z-index: 77;
+}
+.span-width{
+  width: 25%;
+}
+.closeBtn{
+  position: absolute;
+  top: 7%;
+  left: 2%;
+  transition: color 0.4s;
+  font-size: 19px;
+}
+.closeBtn:hover{
+  cursor: pointer !important;
+  color: red;
+}
+
+.ccc{
+  background-color: rgba(72, 72, 72, 0.788);
+  border-radius: 25px;
+  padding: 80px 40px;
+  box-shadow: 0px 0px 44px -19px rgba(0,0,0,0.75);
+}
